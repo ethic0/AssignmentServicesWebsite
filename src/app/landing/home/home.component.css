@@ -1,0 +1,63 @@
+.slider{
+    background-color: grey;
+    height: 80vh;
+}
+
+.help{
+    background-color: aqua;
+    height: 50vh;
+}
+
+.why_container{
+    background-color: blueviolet;
+    height: 70vh;
+}
+
+.tophelp{
+    background-color: crimson;
+    height: 95vh;
+}
+
+.premierhelp{
+    background-color: violet;
+    height: 85vh;
+}
+
+.bg_img_container{
+    background-color: bisque;
+    height: 45vh;
+}
+
+.quad_container{
+    background-color: cornflowerblue;
+    height: 90vh;
+}
+
+.our_services{
+    background-color: darkgoldenrod;
+    height: 1200px;
+}
+
+.assistance_container{
+    background-color: tomato;
+    height: 55vh;
+}
+
+.select_container{
+    background-color: aqua;
+    height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.uni_logo_container{
+    background-color: darkgray;
+    height: 200px;
+    z-index: 100;
+}
+
+.faq_container{
+    background-color: blue;
+    height: 100vh;
+}
