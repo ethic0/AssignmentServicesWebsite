@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+import { SlickCarouselModule } from 'ngx-slick-carousel'; 
+
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
@@ -13,13 +16,12 @@ import { LandingRoutingModule } from './landing-routing-module';
     HomeComponent,
     AboutComponent,
     ServicesComponent,
-
     PricingComponent,
-
   ],
   imports: [
     CommonModule,
-    LandingRoutingModule
+    LandingRoutingModule,
+    SlickCarouselModule
   ]
 })
 export class LandingModule { }

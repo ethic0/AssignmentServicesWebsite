@@ -20,6 +20,7 @@ hr{
     margin-right: auto;
     list-style-type:none;
     display: flex;
+    margin-bottom: 0;
 }
 
 .navbar a {
