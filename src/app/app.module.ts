@@ -7,6 +7,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { LandingModule } from './landing/landing.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { LandingModule } from './landing/landing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LandingModule
+    LandingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,42 +1,174 @@
-<div class="slider">
-    
-      <hr style="background-color:black" />  
-      <div class="row">  
-        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
-          <div ngxSlickItem *ngFor="let image of images" class="slide">  
-            <img src="{{ image.img }}">  
-          </div>  
-        </ngx-slick-carousel>  
-      </div>  
-</div>
+<app-slider></app-slider>
 <div class="help">
 <h1>Get Professional Help in Your Assignment</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam vitae animi, corporis illo eveniet nihil dolores est, necessitatibus atque labore, quasi eius exercitationem quo maxime ullam quisquam modi natus?
 Vel distinctio eaque quae doloribus saepe ea alias ut, cumque ipsam deleniti est pariatur placeat. Ipsa, accusamus, asperiores aperiam eveniet nisi odit dignissimos ex et reiciendis provident similique incidunt maxime.
 Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliquam voluptates quos cum rerum, tempore suscipit corporis, quidem totam aspernatur deleniti. Eaque magni illum placeat! Expedita sunt ipsam doloremque ratione odit.</p> 
 <div class="box_container">
-    <div class="boxes">
+    <span class="boxes">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-receipt" viewBox="0 0 16 16">
+            <path d="M1.92.506a.5.5 0 0 1 .434.14L3 1.293l.646-.647a.5.5 0 0 1 .708 0L5 1.293l.646-.647a.5.5 0 0 1 .708 0L7 1.293l.646-.647a.5.5 0 0 1 .708 0L9 1.293l.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .801.13l.5 1A.5.5 0 0 1 15 2v12a.5.5 0 0 1-.053.224l-.5 1a.5.5 0 0 1-.8.13L13 14.707l-.646.647a.5.5 0 0 1-.708 0L11 14.707l-.646.647a.5.5 0 0 1-.708 0L9 14.707l-.646.647a.5.5 0 0 1-.708 0L7 14.707l-.646.647a.5.5 0 0 1-.708 0L5 14.707l-.646.647a.5.5 0 0 1-.708 0L3 14.707l-.646.647a.5.5 0 0 1-.801-.13l-.5-1A.5.5 0 0 1 1 14V2a.5.5 0 0 1 .053-.224l.5-1a.5.5 0 0 1 .367-.27zm.217 1.338L2 2.118v11.764l.137.274.51-.51a.5.5 0 0 1 .707 0l.646.647.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.646.646.646-.646a.5.5 0 0 1 .708 0l.509.509.137-.274V2.118l-.137-.274-.51.51a.5.5 0 0 1-.707 0L12 1.707l-.646.647a.5.5 0 0 1-.708 0L10 1.707l-.646.647a.5.5 0 0 1-.708 0L8 1.707l-.646.647a.5.5 0 0 1-.708 0L6 1.707l-.646.647a.5.5 0 0 1-.708 0L4 1.707l-.646.647a.5.5 0 0 1-.708 0l-.509-.51z"/>
+            <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm8-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <h4>1. Request a Quote</h4>
+        </span>
+    <span class="boxes">
         
-    </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="green" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+            <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <h4>2. Make Payment</h4>
+        </span>
+    <span class="boxes">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-file-earmark-word" viewBox="0 0 16 16">
+            <path d="M5.485 6.879a.5.5 0 1 0-.97.242l1.5 6a.5.5 0 0 0 .967.01L8 9.402l1.018 3.73a.5.5 0 0 0 .967-.01l1.5-6a.5.5 0 0 0-.97-.242l-1.036 4.144-.997-3.655a.5.5 0 0 0-.964 0l-.997 3.655L5.485 6.88z"/>
+            <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+          </svg>
+          <h4>3. Receive your work</h4>
+        </span>
 </div>
 </div>
 <div class="why_container">
-
+   <h1>Why Choose Us to Help in Your Assignment</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, accusamus praesentium? Nihil assumenda recusandae, optio dolor debitis, nisi ex sed enim vitae perspiciatis asperiores, voluptatum eveniet fugiat deserunt iste cumque!
+   Itaque delectus adipisci harum necessitatibus perferendis illo vitae est pariatur tempore ducimus quas, obcaecati exercitationem, quod tempora nam quae at, voluptates autem reprehenderit corporis officiis ipsum nihil unde! Fuga, modi?
+   Commodi, quia? Aliquid quis enim et, similique magnam cupiditate sed quod corporis cumque nam provident, fugiat suscipit corrupti reiciendis architecto maiores exercitationem sapiente sit tenetur culpa dolore esse neque recusandae!
+   Magni sapiente nostrum, totam cumque at magnam, vero quidem veritatis ratione vitae sit autem distinctio quos modi reiciendis voluptas ea sequi quis iusto voluptatem dolores officiis illum quia? Sequi, quisquam!
+   Ratione enim ipsum harum quos aut ipsa velit voluptatem dolores voluptate, laudantium maiores dolore odit vitae qui repellat iusto non deserunt est. Placeat nobis nam officia dignissimos praesentium dolore sequi!
+   sandae rem eius vitae dolor autem nam sapiente eveniet quia aliquid tempore impedit, quod corporis minima odit quam fugiat. Repellendus, recusandae repellat!
+   Ea nobis aspernatur, ducimus molestias quia quidem! Deleniti id, illo totam architecto nihil amet odit quas, natus et, accusamus vel sequi molestias maxime minus distinctio nemo magnam officia necessitatibus dolores?
+   Illo sed eveniet laborum nisi culpa eum odio quis facere tenetur, dolorum architecto, nesciunt itaque. Esse recusandae, dolor libero ad praesentium exercitationem, quasi officiis molestias nisi vero qui a perferendis?
+   Aperiam necessitatibus eius, beatae quod eaque alias.
+   </p>
+   <p> Quisquam inventore minima esse, ut illo soluta voluptatem repellendus ab voluptate perferendis accusantium repudiandae iusto ipsam odit officia corporis dicta tenetur. Doloribus, obcaecati.
+   Beatae voluptas molestiae ullam nesciunt. Ea, dolor laborum cupiditate expedita voluptate iusto esse ut illo est non fugit quidem! Debitis iure eligendi totam. Alias incidunt quidem sint in! Minus, fuga.
+   Corporis, dolore cupiditate magni magnam ea molestiae quod sit consectetur, fugiat deserunt omnis voluptates adipisci velit harum quas totam culpa id excepturi! Temporibus iure voluptas odio. Eum, a repellendus. Aperiam.
+   Et distinctio ad voluptatem numquam. Eligendi molestias quibusdam ut voluptatum quos aliquam nobis, ab ad magni voluptatem optio culpa. Impedit sit nobis quam quo sunt tempora autem. Nam, est cupiditate?
+   Quas, in necessitatibus alias fugit quam blanditiis porro iste tempore corrupti eos recusandae ad sunt beatae quidem? Officia enim deserunt expedita saepe aspernatur maiores minus, assumenda dolores laudantium molestiae atque.</p>
 </div>
 
 <div class="tophelp">
-
+        <h1>Gauranteed Best Help in Your Assignment</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt deleniti dolor odio tempore repudiandae. </p>
+    <div class="top_help">
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/customer-service.png" alt="24/7 Service">
+            <br>
+            <span>24*7</span>
+            <br>
+            <strong>Support Available</strong>
+            <p>We have thousands of happy customers as we provide round the clock availability. Our proactive support team is trained to resolve your queries at any time of the day.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/responsibility.png" alt="High Response">
+            <br>
+            <span>High Response</span>
+            <br>
+            <strong>Get Quick Responses</strong>
+            <p>We assure our customers timely delivery and thanks to our vast pool of writers we guarantee you the fastest turnaround times, even in the case of revision or update in any assignment.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/plagiarism.png" alt="100% plag free">
+            <br>
+            <span>Plagiarism</span>
+            <br>
+            <strong>Plagiarism Free</strong>
+            <p>Copying content from the web can get you in trouble. Rather, rely on our expert guidance to have the best, most trusted, 100% plagiarism free assignment writing help services</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/files.png" alt="super quality work">
+            <br>
+            <span>Delivery</span>
+            <br>
+            <strong>On Time Delivery</strong>
+            <p>We all know "Assignments On Time" is the biggest concern for all students. Because all students need their assignments before the deadline given.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/business-analyst.png" alt="experts">
+            <br>
+            <span>30+ Experts</span>
+            <br>
+            <strong>For help in any assignemnt</strong>
+            <p>Quality, precision, creativity, and plagiarism-free content is our expertise. That’s why our team has writers and proofreaders who possess a higher degree of knowledge.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/shield.png" alt="secure and confidential">
+            <br>
+            <span>Secure & confidential</span>
+            <br>
+            <strong>confidential Services</strong>
+            <p>For us, providing confidential and secured top-notch assignment writing services is a major priority. Keeping our clients away from scammers and ticker’s hands, we kept our clients' information confidential.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/writer.png" alt="multiple courses">
+            <br>
+            <span>Vast Courses Covered</span>
+            <br>
+            <strong>All Assignments & HW</strong>
+            <p>Worried about how to get your multiple subjects assignments done? Well, leave this worry on us! Our team of skilled writers from different professional fields like- management, nursing, law, engineering etc. will do it for you.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/quality.png" alt="highest quality">
+            <br>
+            <span>Get Highest Quality</span>
+            <br>
+            <strong>Work at best price</strong>
+            <p>Tired of searching for a quality service provider at the best price? Failed to find the perfect match as per your need? With us you will get 100% assured quality service at aguaranteed low price.</p>
+        </div>
+        <div class="top_help_item">
+            <img src="../../../assets/iconset/tag.png" alt="flexible pricing">
+            <br>
+            <span>Fair Pricing</span>
+            <br>
+            <strong>Pocket Friendly Pricing</strong>
+            <p>Our primary aim is to provide the best academic help by keeping the students' budget in mind. This ensures highly effective assignments that match the particular demands of the students at a decent quality, minimal price.</p>
+        </div>
+    </div>
 </div>
 
 <div class="premierhelp">
-
+    <div class="content">
+        <h1>Premium Quality Assignment Services Provider</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus fugiat vitae similique. Exercitationem expedita soluta, quae earum odio doloremque vitae magni numquam? Ex dolorem accusantium, voluptatibus placeat voluptates quae.</p>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere quasi, doloremque eum aspernatur commodi ex. Possimus alias asperiores placeat ratione quisquam, eum illo dignissimos atque. Nobis necessitatibus tenetur nisi.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere quasi, doloremque eum aspernatur commodi ex. Possimus alias asperiores placeat ratione quisquam, eum illo dignissimos atque. Nobis necessitatibus tenetur nisi.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat facere quasi, doloremque eum aspernatur commodi ex. Possimus alias asperiores placeat ratione quisquam, eum illo dignissimos atque. Nobis necessitatibus tenetur nisi.</li>
+        <h1>Get the best quality help in Your Assignments</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus sapiente quam labore placeat qui, ad quisquam dolor expedita cupiditate repellat autem, illo aspernatur. Neque hic quisquam dignissimos reiciendis! Cum, ex!</p>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam similique optio neque, suscipit unde ipsa aliquam magnam eligendi incidunt doloribus numquam esse libero, excepturi, dolorem fuga aspernatur? Saepe, perferendis?</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolores, aliquam nostrum impedit fugiat pariatur esse natus optio reprehenderit non quo magnam officiis dicta at dignissimos eos quidem numquam voluptatem!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni atque neque possimus, nulla ex provident doloribus asperiores voluptas iusto recusandae optio magnam cum, fugiat nam. Fugiat, obcaecati magni. Itaque.</li>
+        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, odio inventore perferendis eveniet ea vero tempore veniam. Facere perspiciatis delectus nulla dolorum quae soluta excepturi quia inventore. Ut, fugiat velit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, sunt ipsam qui laborum id a delectus vel fugiat aspernatur eligendi iure itaque eos maiores reprehenderit illum natus quia molestiae? Et.</li>
+    </div>   
 </div>
 
 <div class="bg_img_container">
-
+<img src="../../../assets/pexels-pixabay-159775.jpg" alt="">
 </div>
 
 <div class="quad_container">
+    <div class="quad_item">
+        <h1>Still Got worried?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dicta omnis labore. Nihil provident natus deserunt non aut voluptate sit! Nemo possimus placeat quas nam facere ut sunt laudantium repellendus.
+        Optio molestiae veritatis dolore adipisci voluptates quidem corporis iure reiciendis dolorum ea voluptas eligendi deleniti, qui vel facere doloremque itaque recusandae alias quod assumenda facilis esse atque perspiciatis et. Culpa.
+        Ut in doloribus libero repudiandae molestias magni nobis, temporibus provident officiis omnis, eos quasi quos consequuntur quam iure doloremque nemo tenetur hic! Delectus fugiat autem error nesciunt non, consequatur eveniet!
+        Incidunt quisquam neque aspernatur? Repudiandae odit dolorem deleniti mollitia, nisi quisquam impedit possimus, dolor deserunt ab dignissimos fugiat facere .</p>
+    </div>
+    <div class="quad_item">
+        <img src="../../../assets/1.jpg" alt="">
+    </div>
+    <div class="quad_item">
+        <img src="../../../assets/2.jpg" alt="">
+    </div>
+    <div class="quad_item">
+        <h1>What's the costing?</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita dicta omnis labore. Nihil provident natus deserunt non aut voluptate sit! Nemo possimus placeat quas nam facere ut sunt laudantium repellendus.
+            Optio molestiae veritatis dolore adipisci voluptates quidem corporis iure reiciendis dolorum ea voluptas eligendi deleniti, qui vel facere doloremque itaque recusandae alias quod assumenda facilis esse atque perspiciatis et. Culpa.
+            Ut in doloribus libero repudiandae molestias magni nobis, temporibus provident officiis omnis, eos quasi quos consequuntur quam iure doloremque nemo tenetur hic! Delectus fugiat autem error nesciunt non, consequatur eveniet!
+            Incidunt quisquam neque aspernatur? Repudiandae odit dolorem deleniti mollitia, nisi quisquam impedit possimus, dolor deserunt ab dignissimos fugiat facere .</p>
+    </div>
 
 </div>
 
