@@ -1,10 +1,14 @@
 <div class="slider">
     
-    <hr style="background-color:black" />  
+    <!-- <hr style="background-color:black" />   -->
     <div class="row">  
       <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
         <div ngxSlickItem *ngFor="let image of images" class="slide">  
-          <img src="{{ image.img }}">  
+          <img src="{{ image.img }}"> 
+          <div class="text">
+            <h1>{{image.text}}</h1>
+            <p>{{image.summary}}</p>
+          </div>
         </div>  
       </ngx-slick-carousel>  
     </div>  

@@ -1,9 +1,90 @@
 .copyright{
-    background-color: yellow;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7px;
+    text-align: center;
+    color: white;
+    background-color: rgb(45, 43, 130);
     height: 40px;
 }
 
 .footer_container{
-    background-color: green;
+    width: 100%;
+    background-color:#273444;
     height: 350px;
+    
+    
 }
+
+.container{
+    width: 1200px;
+    height: 350px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items:flex-start;
+}
+
+
+
+.logo_info{
+    color: grey;
+    width: 25%;
+    height: 70%;
+    /* background-color: brown; */
+}
+
+.links{
+    width: 25%;
+    height: 70%;
+    /* background-color: burlywood; */
+    text-decoration: none;
+    
+}
+
+.links  li{
+    list-style-type: none;
+}
+
+.services{
+    width: 25%;
+    height: 70%;
+    /* background-color: cadetblue; */
+}
+
+.services li{
+    list-style-type: none;
+}
+.socials{
+    width: 25%;
+    height: 70%;
+    /* color: grey; */
+    /* background-color: chartreuse; */
+}
+
+.social-icons{
+ margin-right: 20px;
+ padding: 4px 0;
+}
+.container .links .logo_info  a{
+    color: white;
+    text-decoration: none;
+}
+
+.links  h3{
+   padding-left: 30px;
+}
+.services h3{
+    padding-left: 30px;
+}
+.socials h3{
+    padding-left: 30px;
+}
+a{
+    color: grey;;
+    text-decoration: none;
+}
+
