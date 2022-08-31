@@ -1,21 +1,26 @@
+
 .slider{
     height: 80vh;
     overflow: hidden;
     background: black;
     /* width: 99vw; */
+    position: relative;
+    
 }
 .slick-slider {  
     width: 100%;  
     margin: auto; 
     height: 750px;
+    
     /* background-size:cover; */
     
   }  
 
 .slick-slider img {
   height: 10%;
-  opacity: 0.4;
+  opacity: 0.3;
   object-fit: cover;
+  
 }
 
 .text{
@@ -28,4 +33,34 @@
 .text p{
   margin-left: auto;
   margin-right: auto;
+}
+
+.qoute_form{
+  /* width: 350px;
+  border: 1px solid black;
+  padding: 10px;
+  display: block;
+  z-index: 1000; */
+  position: absolute;
+  right:150px;
+  top:150px;
+  /* margin: 20px; */
+  max-width: 550px;
+  padding: 16px;
+  background-color: white;
+  z-index: 999;
+  
+}
+.qoute_form input{
+  width:100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.qoute_form select{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.qoute_form button{
+  width: 100%;
 }
