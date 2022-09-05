@@ -1,13 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
-
-  constructor() { }
+  orderForm:any;
+  constructor(private formBuilder:FormBuilder) {
+    this.orderForm = this.formBuilder.group({
+      email:['',[Validators.required, Validators.email]],
+      assignment_type: ['',Validators.required],
+      subject:['',Validators.required],
+      country:['', Validators.required],
+      word_count:['',Validators.required],
+      phone:['',[Validators.required,Validators.minLength(10), Validators.maxLength(15)]],
+      deadline:['',Validators.required],
+      brief:['']
+    });
+   }
   images = [
     {img:'../../../assets/slider/1.jpg', text:' No.1 Assignment Help Provider | Essay and Academic Assignment Writing.', summary:'Treat Assignment Help is No. 1 Academic Writing service provider along with Report Writing, Case Studies, Coursework Help, Thesis Help, Online Quizzes, and More.'},
     {img:'../../../assets/slider/2.jpg', text:'Your Trusted Source for Assignment Help',summary:'Prepare for your success with expert assistance in assignment writing, report writing, case studies, coursework help, thesis help, online quizzes, and more..'},
@@ -23,6 +34,46 @@ export class SliderComponent implements OnInit {
     "autoplay":true  
   };  
 
+  sendOrder(){
+    console.log(this.orderForm.value);
+    let formData = this.orderForm;
+    const uploadData = new FormData(); // Create Form Data object to upload the file in POST FORM
+
+    for (let i in this.orderForm) {
+      if (this.orderForm[i] instanceof Blob){  //  Check if key value is file
+        uploadData.append(i, this.orderForm[i], this.orderForm[i].name ? this.orderForm[i].name : "");
+      }
+      else
+        uploadData.append(i, this.orderForm[i]);
+    }
+  }
+  getFile(e){
+    let allowedExtension = {
+      "docx":true, 
+      "doc":true, 
+      "pdf":true,
+      "pptx":true,
+      "odt":true,
+      "rtf":true,
+      "png":true, 
+      "jpeg":true,
+      "jpg":true,
+      "zip":true
+    };
+    console.log(e.target.files);
+    if(e.target.files[0].size / 1024 / 1024 > 20 ){
+      alert("Maximum File Size should be less than 20MB.")
+      return;
+    }
+    if(allowedExtension){
+      var nam = e.target.files[0].name.split('.').pop();
+      if(!allowedExtension){
+        alert("Please Upload " + Object.keys(allowedExtension) + " file.")
+        return;
+      }
+    }
+    this.orderForm.controls["brief"].setValue(e.target.files[0]);
+  }
   ngOnInit(): void {
   }
 

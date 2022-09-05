@@ -5,6 +5,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { ServicesComponent } from './services/services.component';
 
 
+
 const routes: Routes = [
  {
     path:'about',component:AboutComponent

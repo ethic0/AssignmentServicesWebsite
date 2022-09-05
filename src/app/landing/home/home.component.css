@@ -153,18 +153,75 @@
 .select_container{
     background-color: aqua;
     height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
+.uni_logo{
+    padding: 20px;
+    background-color: #1f2d3d;
+}
 .uni_logo_container{
-    background-color: darkgray;
+   
     height: 200px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 100;
+    
+}
+
+marquee{
+    display: flex;
+    align-items: center;
+}
+.logo-flow{
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+    border: 5px solid orange;
 }
 
 .faq_container{
-    background-color: blue;
+    /* background-color: blue; */
     height: 100vh;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }

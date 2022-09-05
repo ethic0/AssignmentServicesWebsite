@@ -27,7 +27,10 @@
   position: absolute;
   top: 20%;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   color: white;
+  
 }
 
 .text p{
@@ -48,8 +51,9 @@
   max-width: 550px;
   padding: 16px;
   background-color: white;
+  opacity: 0.9;
   z-index: 999;
-  
+  border-radius: 10px;
 }
 .qoute_form input{
   width:100%;

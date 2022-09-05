@@ -183,11 +183,24 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
 </div>
 
 <div class="select_container">
+   <div class="uni_logo">
     <div class="uni_logo_container">
-
+        <h3 style="color: white;">Trusted by the Students of:</h3>
+        <marquee behavior="scroll" direction="left" scrollamount="8">
+       <div class="logo-flow" *ngFor="let image of uniLogo">
+                <img src="{{image.img}}" alt="uniLogo" width="150px" height="75px">
+       </div>
+    </marquee>
     </div>
+   </div>
+    
 </div>
 
 <div class="faq_container">
-    
+    <div *ngFor="let item of data;let i = index;">
+        <button class="accordion" (click)="toggleAccordian($event, i)"> {{item.parentName}} </button>
+        <div class="panel" *ngFor="let child of item.childProperties" hide="!item.isActive" >
+        <p> {{child.propertyName}} </p>
+      </div>
+      </div>
 </div>

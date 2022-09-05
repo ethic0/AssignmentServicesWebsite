@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { SlickCarouselModule } from 'ngx-slick-carousel'; 
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -38,6 +41,9 @@ import { ThesisHelpComponent } from './services/thesis-help/thesis-help.componen
     CommonModule,
     LandingRoutingModule,
     SlickCarouselModule,
+    FormsModule, 
+    ReactiveFormsModule,
+    CdkAccordionModule
 
   ]
 })

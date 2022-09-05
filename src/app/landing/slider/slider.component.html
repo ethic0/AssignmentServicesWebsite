@@ -1,30 +1,30 @@
 
 <div class="slider">
   <div class="row mb-3 qoute_form">
-    <form>
+    <form [formGroup]="orderForm" (submit)="sendOrder()">
       <h3>Get Free Quote</h3>
       <div>
-      <input class="form-control" type="email" name="email" id="" placeholder="Enter Email">
+      <input formControlName="email" class="form-control" type="email" name="email" id="" placeholder="Enter Email">
       </div>
       <div>
-        <select class="form-control" name="" id="">
+        <select formControlName="assignment_type" class="form-control" name="" id="">
           <option value="">Select Assignment Type</option>
-          <option value="">Assignment</option>
-          <option value="">Case Study</option>
-          <option value="">Business Proposal</option>
-          <option value="">Dissertation</option>
-          <option value="">Essay</option>
-          <option value="">Research paper</option>
-          <option value="">Thesis</option>
-          <option value="">PowerPoint Presentation</option>
-          <option value="">Others</option>
+          <option value="Assignment">Assignment</option>
+          <option value="Case Study">Case Study</option>
+          <option value="Business Proposal">Business Proposal</option>
+          <option value="Dissertation">Dissertation</option>
+          <option value="Essay">Essay</option>
+          <option value="Research paper">Research paper</option>
+          <option value="Thesis">Thesis</option>
+          <option value="PowerPoint Presentation">PowerPoint Presentation</option>
+          <option value="Others">Others</option>
         </select>
       </div>
       <div>
-        <input class="form-control" type="text" name="" id="" placeholder="Enter Subject">
+        <input formControlName="subject" class="form-control" type="text" name="" id="" placeholder="Enter Subject">
       </div>
       <div>
-        <select class="form-control" name="" id="">
+        <select formControlName="country" class="form-control" name="" id="">
           <option value="">Select Country</option>
           <option value="Afghanistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -234,7 +234,7 @@
         </select>
       </div>
       <div>
-        <select class="form-control" id="optPages" name="optiopg">
+        <select formControlName="word_count" class="form-control" id="optPages" name="optiopg">
           <option value="">--Select Pages (1 Page = 250 Words )--</option>
           <option value="1">1 page/250 words</option>
           <option value="2">2 page/500 words</option>
@@ -272,17 +272,17 @@
           </select>
       </div>
       <div>
-        <input class="form-control" type="number" name="phone" id="" placeholder="Enter Phone Number">
+        <input formControlName="phone" class="form-control" type="number" name="phone" id="" placeholder="Enter Phone Number">
       </div>
       <div>
         <label for="deadline">Deadline *</label>
-        <input class="form-control" type="date" name="" id="">
+        <input formControlName="deadline" class="form-control" type="date" name="" id="">
       </div>
       <div>
-        <input type="file" name="" id="">
+        <input formControlName="brief" type="file" name="" id="">
       </div>
       <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" [disabled]="!orderForm.valid" class="btn btn-primary">Submit</button>
       </div>
     </form>
   </div>
