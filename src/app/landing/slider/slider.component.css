@@ -18,6 +18,7 @@
 
 .slick-slider img {
   height: 10%;
+  width: 100%;
   opacity: 0.3;
   object-fit: cover;
   
@@ -25,17 +26,27 @@
 
 .text{
   position: absolute;
-  top: 20%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  top: 10%;
   color: white;
-  
+  padding-right: 4%;
+}
+
+.text h1{
+  margin-left: 10%;
+  font-size: 50px;
+  width: 1024px;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 70px;
+  overflow-wrap: break-word;
+  word-wrap: normal;
+  word-break: break-word;
 }
 
 .text p{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left:10%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .qoute_form{

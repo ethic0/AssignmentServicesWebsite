@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
@@ -19,6 +20,8 @@ export class SliderComponent implements OnInit {
       brief:['']
     });
    }
+
+ 
   images = [
     {img:'../../../assets/slider/1.jpg', text:' No.1 Assignment Help Provider | Essay and Academic Assignment Writing.', summary:'Treat Assignment Help is No. 1 Academic Writing service provider along with Report Writing, Case Studies, Coursework Help, Thesis Help, Online Quizzes, and More.'},
     {img:'../../../assets/slider/2.jpg', text:'Your Trusted Source for Assignment Help',summary:'Prepare for your success with expert assistance in assignment writing, report writing, case studies, coursework help, thesis help, online quizzes, and more..'},
