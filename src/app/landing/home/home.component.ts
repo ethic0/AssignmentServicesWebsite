@@ -90,6 +90,24 @@ export class HomeComponent implements OnInit {
     {img:'../../../assets/uni/sheffield.jpg'},
     {img:'../../../assets/uni/stirling.jpg'},
   ]
+  images = [
+    {img:'../../../assets/clients/pexels-nicole-berro-2393793.jpg', text:'Got exceptional assignment help. It was on point and required no further addition of any sort. Not only the word limit was taken care of but the vocabulary and grammar also had been meticulously checked. The presentation and structural arrangement of the assignment was also nice. Looking forward to use the services again.', clientName:'Name1', location:'Somewhere'},
+    {img:'../../../assets/clients/pexels-andrea-piacquadio-3799223.jpg', text:'For me, the complicated concepts of information technology always ended up with procrastination. But not anymore, because now TAH has my back. I was unable to resist the urge to copy from the internet which affected my grades in the last semester. With professional help, the design of computational systems seems easy to me that now all my papers are unique, properly cited, and timely written.', clientName:'Name2', location:'Someplace'},
+    {img:'../../../assets/clients/pexels-rodnae-productions-7713230.jpg', text:'Gone are the days when I used to deal with great levels of emotional stress and struggle with due papers. Now I can rely on the Ph. D. writers of TAH who can provide assistance at any academic level. Thanks again for improving my homework writing skills.', clientName:'Name3', location:'SomeVenue'},
+    {img:'../../../assets/clients/pexels-rodnae-productions-7713237.jpg', text:'Quality and on-time delivery are not merely promises, but they provide it as well. I have been with them for two years and every time I get what I desire. So, everyone should choose treatassignmenthelp.uk and order their assignments without any hesitation.', clientName:'Name4', location:'SomeSpace'},
+    {img:'../../../assets/clients/pexels-vlada-karpovich-4050439.jpg', text:'I wanted to take online help for my data structure assignment. But I held it back because I was afraid that the assignment would be too perfect and I would get caught for cheating and academic misconduct. To my surprise, they draft the assignment so well and exactly as per my academic qualification. They simply craft each paper based on your academic level, so that you don’t get penalized for cheating and can get professional help that stays behind the scene all the time.', clientName:'Name5', location:'Mars'},
+    {img:'../../../assets/clients/pexels-muhammadtaha-ibrahim-maaji-2517765.jpg', text:'dvkjbdvzI was needing help with the business management assignment, I was worried but later I was suggested to take assistance from you. You helped me and delivered the assignment on time. You guys do a tremendous job. I would surely look forward to your services.kjb', clientName:'Name6', location:'SomePoint'},
+    {img:'../../../assets/clients/pexels-vlada-karpovich-4050439.jpg', text:'I dont think I have ever used a more effective assignment writing service and I know what I am saying. I have been using such websites since high school as I hate these writing assignments. I have no time or any ispiration to work on them by myself. Thanks to these guys for their professional and quick help.', clientName:'Name7', location:'Nowhere'}
+
+
+  ]
+  slideConfig = {  
+    "slidesToShow": 1,  
+    "slidesToScroll": 1,  
+    "dots": true,  
+    "infinite": true,
+    "autoplay":true  
+  }; 
   ngOnInit(): void {
   }
   toggleAccordian(event, index) {

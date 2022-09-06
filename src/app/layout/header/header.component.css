@@ -24,6 +24,8 @@ hr{
 }
 
 .navbar a {
+    font-size: 17px;
+    font-weight: 400;
     color: black;
     text-decoration: none;
 }

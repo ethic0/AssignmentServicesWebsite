@@ -43,11 +43,12 @@
   word-break: break-word;
 }
 
-.text p{
+.text p {
   margin-left:10%;
   font-size: 20px;
   line-height: 30px;
 }
+
 
 .qoute_form{
   /* width: 350px;
@@ -62,7 +63,7 @@
   max-width: 550px;
   padding: 16px;
   background-color: white;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   z-index: 999;
   border-radius: 10px;
 }

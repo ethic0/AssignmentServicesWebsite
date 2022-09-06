@@ -1,6 +1,9 @@
 <app-slider></app-slider>
 <div class="help">
-<h1>Get Professional Help in Your Assignment</h1>
+    <div class="header">
+        <h1>Get Professional Help in Your Assignment</h1>
+    </div>
+
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad magnam vitae animi, corporis illo eveniet nihil dolores est, necessitatibus atque labore, quasi eius exercitationem quo maxime ullam quisquam modi natus?
 Vel distinctio eaque quae doloribus saepe ea alias ut, cumque ipsam deleniti est pariatur placeat. Ipsa, accusamus, asperiores aperiam eveniet nisi odit dignissimos ex et reiciendis provident similique incidunt maxime.
 Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliquam voluptates quos cum rerum, tempore suscipit corporis, quidem totam aspernatur deleniti. Eaque magni illum placeat! Expedita sunt ipsam doloremque ratione odit.</p> 
@@ -30,7 +33,9 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
 </div>
 </div>
 <div class="why_container">
-   <h1>Why Choose Us </h1>
+    <div class="header">
+        <h1>Why Choose Us </h1>
+    </div>
    <p>assignment assignment assignment assignment assignment Lorem ipsum dolor sit amet consectetur adipisicing elit. At, accusamus praesentium? Nihil assumenda recusandae, optio dolor debitis, nisi ex sed enim vitae perspiciatis asperiores, voluptatum eveniet fugiat deserunt iste cumque!
    Itaque delectus adipisci harum necessitatibus perferendis illo vitae est pariatur tempore ducimus quas, obcaecati exercitationem, quod tempora nam quae at, voluptates autem reprehenderit corporis officiis ipsum nihil unde! Fuga, modi?
    Commodi, quia? Aliquid quis enim et, similique magnam cupiditate sed quod corporis cumque nam provident, fugiat suscipit corrupti reiciendis architecto maiores exercitationem sapiente sit tenetur culpa dolore esse neque recusandae!
@@ -51,7 +56,10 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
 </div>
 
 <div class="tophelp">
+    <div class="header">
         <h1>Gauranteed Best Help in Your Assignment</h1>
+    </div>
+        
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt deleniti dolor odio tempore repudiandae. </p>
     <div class="top_help">
         <div class="top_help_item">
@@ -148,6 +156,33 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
 
 <div class="bg_img_container">
 <img src="../../../assets/pexels-pixabay-159775.jpg" alt="">
+    <div class="img_text">
+        <h2>Looking for Reliable Online Asssignment Help Services?</h2>
+    </div>
+    <div class="list_container">
+        <div class="list1">
+            <ul>
+                <li>Homework Assignment Help </li>
+                <li>Thesis Assignment Help</li>
+                <li>Academic Paper Writing</li>
+                <li>Marketing Dissetation Help</li>
+                <li>Case Study Help </li>
+            </ul>
+        </div>
+        <div class="list2">
+            <ul>
+                <li>Science Assignment Help</li>
+                <li>Programming Assignment Help</li>
+                <li>English Assignment Help</li>
+                <li>LAW Assignment Help</li>
+                <li>Do my Assignment Help </li>
+            </ul>
+        </div>
+        <div class="discount_section">
+            <img class="rotate" src="../../../assets/uni/30off.png" alt="30% off">
+            <button class="btn btn-primary">Order Now</button>
+        </div>
+    </div>
 </div>
 
 <div class="quad_container">
@@ -179,7 +214,25 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
 </div>
 
 <div class="assistance_container">
-
+    <div class="header">
+        <h1> Our Happy Clients</h1>
+    </div>
+    <div class="slider">
+        <div class="row">  
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+              <div ngxSlickItem *ngFor="let image of images" class="slide">  
+                <img src="{{ image.img }}"> 
+                <div class="text">
+                    <blockquote>
+                        <p>{{image.text}}</p>
+                    </blockquote>
+                <span><strong>{{image.clientName}}</strong></span>
+                <div class="clientLocation">{{image.location}}</div>
+                </div>
+              </div> 
+            </ngx-slick-carousel>  
+          </div> 
+    </div>
 </div>
 
 <div class="select_container">
@@ -193,10 +246,12 @@ Accusantium excepturi necessitatibus voluptate optio beatae nostrum, fugit aliqu
     </marquee>
     </div>
    </div>
-    
 </div>
 
 <div class="faq_container">
+    <div class="header">
+        <h1>Frequently Asked Questions</h1>
+    </div>
     <div *ngFor="let item of data;let i = index;">
         <button class="accordion" (click)="toggleAccordian($event, i)"> {{item.parentName}} </button>
         <div class="panel" *ngFor="let child of item.childProperties" hide="!item.isActive" >
