@@ -47,8 +47,24 @@
   margin-left:10%;
   font-size: 20px;
   line-height: 30px;
+   overflow-wrap: break-word;
+  word-wrap: normal;
+  word-break: break-word;
 }
 
+.icon{
+  display: flex;
+}
+
+.sup{
+  margin-left: 150px;
+  padding-left: 50px;
+}
+
+.sup p{
+  margin-top: 20px;
+  margin-left: -50px;
+}
 
 .qoute_form{
   /* width: 350px;
