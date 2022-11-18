@@ -1,6 +1,7 @@
 {
   "hosting": [
     {
+      "target":"aushinAssignments",
       "public": "public",
       "ignore": [
         "firebase.json",
