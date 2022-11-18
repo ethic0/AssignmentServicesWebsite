@@ -7,6 +7,6 @@ export const environment = {
     storageBucket: "aushin-assignments.appspot.com",
     messagingSenderId: "1016479994920",
     appId: "1:1016479994920:web:562fdcc9382f2983fed11d"
-  };
+  }
   
 };
