@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "aushin-assignments"
+  },
+  "targets": {
+    "aushin-assignments": {
+      "hosting": {
+        "aushinAssignments": [
+          "aushin-assignments"
+        ]
+      }
+    }
+  }
+}
