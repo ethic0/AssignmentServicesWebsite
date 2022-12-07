@@ -279,7 +279,7 @@
         <input formControlName="deadline" class="form-control" type="date" name="" id="">
       </div>
       <div>
-        <input formControlName="brief" type="file" name="" id="">
+        <input (change)="selectFile($event)" #inputFile type="file" name="" id="">
       </div>
       <div>
         <button type="submit" [disabled]="!orderForm.valid" class="btn btn-primary">Submit</button>

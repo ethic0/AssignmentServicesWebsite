@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { FileUpload } from 'src/app/FileUpload';
 import { Service } from 'src/app/_services/service';
 
 @Component({
@@ -9,6 +10,10 @@ import { Service } from 'src/app/_services/service';
 })
 export class SliderComponent implements OnInit {
   orderForm:any;
+  selectedFiles?: FileList;
+  currentFileUpload?: FileUpload;
+  percentage = 0;
+  @ViewChild('inputFile') myInputVariable: ElementRef;
   constructor(private formBuilder:FormBuilder, private addData:Service) {
     this.orderForm = this.formBuilder.group({
       email:['',[Validators.required, Validators.email]],
@@ -18,7 +23,7 @@ export class SliderComponent implements OnInit {
       wordCount:['',Validators.required],
       phone:['',[Validators.required,Validators.minLength(10), Validators.maxLength(15)]],
       deadline:['',Validators.required],
-      brief:['']
+      // brief:['']
     });
    }
 
@@ -42,45 +47,23 @@ export class SliderComponent implements OnInit {
     console.log(this.orderForm);
     console.log(this.orderForm.value);
     let formData = this.orderForm.value;
-    let randomId = (Math.random() + 1).toString(36).substring(3).toUpperCase();
-    this.addData.addRequest(randomId, formData);
+    if(this.selectedFiles){
+      const file: File | null = this.selectedFiles.item(0);
+      this.selectedFiles = undefined;
+      if(file){
+        this.currentFileUpload = new FileUpload(file);
+        this.addData.addRequest(this.currentFileUpload, formData);
+      }
+    }
     this.orderForm.reset();
-    // for (let i in this.orderForm) {
-    //   if (this.orderForm[i] instanceof Blob){  //  Check if key value is file
-    //     uploadData.append(i, this.orderForm[i], this.orderForm[i].name ? this.orderForm[i].name : "");
-    //   }
-    //   else
-    //     uploadData.append(i, this.orderForm[i]);
-    // }
+    this.myInputVariable.nativeElement.value = '';
   }
-  // getFile(e){
-  //   let allowedExtension = {
-  //     "docx":true, 
-  //     "doc":true, 
-  //     "pdf":true,
-  //     "pptx":true,
-  //     "odt":true,
-  //     "rtf":true,
-  //     "png":true, 
-  //     "jpeg":true,
-  //     "jpg":true,
-  //     "zip":true
-  //   };
-  //   console.log(e.target.files);
-  //   if(e.target.files[0].size / 1024 / 1024 > 20 ){
-  //     alert("Maximum File Size should be less than 20MB.")
-  //     return;
-  //   }
-  //   if(allowedExtension){
-  //     var nam = e.target.files[0].name.split('.').pop();
-  //     if(!allowedExtension){
-  //       alert("Please Upload " + Object.keys(allowedExtension) + " file.")
-  //       return;
-  //     }
-  //   }
-  //   this.orderForm.controls["brief"].setValue(e.target.files[0]);
-  // }
+  
   ngOnInit(): void {
+  }
+
+  selectFile(event: any): void {
+    this.selectedFiles = event.target.files;
   }
 
 }
