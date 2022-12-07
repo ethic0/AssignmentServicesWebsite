@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './landing/home/home.component';
+import { HomeComponent } from './client/landing/home/home.component';
 
 const routes: Routes = [
   {
@@ -8,11 +8,11 @@ const routes: Routes = [
   },
   {
     path:'quick_upload',
-    loadChildren:() => import('./quick/quick.module').then(m=>m.QuickModule)
+    loadChildren:() => import('./client/quick/quick.module').then(m=>m.QuickModule)
   },
   {
     path:'sample',
-    loadChildren:()=> import('./sample/sample.module').then(m=>m.SampleModule)
+    loadChildren:()=> import('./client/sample/sample.module').then(m=>m.SampleModule)
   }
 ];
 

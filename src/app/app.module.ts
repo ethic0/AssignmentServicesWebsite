@@ -4,9 +4,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { LandingModule } from './landing/landing.module';
+import { HeaderComponent } from './client/layout/header/header.component';
+import { FooterComponent } from './client/layout/footer/footer.component';
+import { LandingModule } from './client/landing/landing.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
