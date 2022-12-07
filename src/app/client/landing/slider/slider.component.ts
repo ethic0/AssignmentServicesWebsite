@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FileUpload } from 'src/app/FileUpload';
 import { Service } from 'src/app/_services/service';
 
@@ -14,7 +15,7 @@ export class SliderComponent implements OnInit {
   currentFileUpload?: FileUpload;
   percentage = 0;
   @ViewChild('inputFile') myInputVariable: ElementRef;
-  constructor(private formBuilder:FormBuilder, private addData:Service) {
+  constructor(private formBuilder:FormBuilder, private addData:Service, private router: Router) {
     this.orderForm = this.formBuilder.group({
       email:['',[Validators.required, Validators.email]],
       type: ['',Validators.required],
@@ -57,6 +58,7 @@ export class SliderComponent implements OnInit {
     }
     this.orderForm.reset();
     this.myInputVariable.nativeElement.value = '';
+    this.router.navigateByUrl('/thanks');
   }
   
   ngOnInit(): void {

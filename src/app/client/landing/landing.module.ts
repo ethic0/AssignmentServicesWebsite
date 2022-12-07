@@ -19,6 +19,7 @@ import { EssayWritingComponent } from './services/essay-writing/essay-writing.co
 import { CaseStudyComponent } from './services/case-study/case-study.component';
 import { ProgrammingHelpComponent } from './services/programming-help/programming-help.component';
 import { ThesisHelpComponent } from './services/thesis-help/thesis-help.component';
+import { DoneComponent } from './done/done.component';
 
 
 
@@ -36,6 +37,7 @@ import { ThesisHelpComponent } from './services/thesis-help/thesis-help.componen
     CaseStudyComponent,
     ProgrammingHelpComponent,
     ThesisHelpComponent,
+    DoneComponent,
   ],
   imports: [
     CommonModule,

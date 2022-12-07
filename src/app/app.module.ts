@@ -18,6 +18,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database'
 import { environment } from 'src/environments/environment.prod';
 
 import { Service } from '../app/_services/service';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { Service } from '../app/_services/service';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     LandingModule,
+    AdminModule,
     FormsModule, 
     ReactiveFormsModule, 
     BrowserAnimationsModule,
