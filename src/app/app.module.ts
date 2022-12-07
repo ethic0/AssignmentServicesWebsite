@@ -11,6 +11,12 @@ import { LandingModule } from './landing/landing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { environment } from 'src/environments/environment.prod';
+
+import { Service } from '../app/_services/service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,10 +31,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule, 
     ReactiveFormsModule, 
     BrowserAnimationsModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
 
   ],
-  providers: [],
+  providers: [Service],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
