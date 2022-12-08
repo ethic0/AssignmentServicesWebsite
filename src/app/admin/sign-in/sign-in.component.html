@@ -1,0 +1,24 @@
+<div class="wrapper">
+	<div class="container">
+		<h1>Welcome</h1>
+		
+		<form [formGroup]="loginForm"  class="form" (submit)="login()">
+			<input type="text" formControlName="email" placeholder="Email">
+			<input type="password" formControlName="password" placeholder="Password">
+			<button type="submit" id="login-button">Login</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
