@@ -6,11 +6,13 @@ import { AdminRoutingModule } from './admin-routing-module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Auth } from '../_services/auth';
+import { OrderListComponent } from './dashboard/order-list/order-list.component';
 
 @NgModule({
     declarations:[
     SignInComponent,
-    DashboardComponent
+    DashboardComponent,
+    OrderListComponent
   ],
     imports:[
         FormsModule,
@@ -19,7 +21,6 @@ import { Auth } from '../_services/auth';
         AngularFireAuthModule
     ],
     providers:[
-      Auth
     ]
 })
 

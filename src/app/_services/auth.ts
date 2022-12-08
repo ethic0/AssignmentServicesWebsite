@@ -82,9 +82,8 @@ get isLoggedIn(): boolean {
   
   // Sign out
   SignOut() {
-    return this.angularFireAuth.signOut().then(() => {
-      localStorage.removeItem('user');
-      this.router.navigate(['']);
-    });
+    localStorage.removeItem('user');
+    this.router.navigate(['admin']);
+    return this.angularFireAuth.signOut();
   }
 }
